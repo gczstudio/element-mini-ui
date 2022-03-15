@@ -6,6 +6,7 @@ const load = function(path) {
 };
 
 const loadDocs = function(path) {
+  console.log(path, 111)
   return r => require.ensure([], () =>
       r(require(`./docs${path}.md`)))
 };
